@@ -1,0 +1,106 @@
+*{
+    color: white;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    scroll-padding-top: 6.3rem;
+}
+
+body{
+    background: #191919f5;
+    /* height: 200vh; */
+}
+
+header{
+    position: sticky;
+    top: 5px;
+    height: 6rem;
+    width: 100%;
+    /* margin: 5px; */
+    background: url(../assets/images/navbg.png)no-repeat center;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.870);
+    border-bottom-left-radius: 60px;
+    border-top-left-radius: 60px;
+    display: flex;
+    z-index: 999;
+}
+nav{
+    display: flex;
+    list-style: none;
+    /* border: 2px solid red; */
+    align-items: center;
+    padding: 0.8rem;
+    width: 100%;
+}
+
+nav .navElements a{
+    padding: 5px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-left: 8rem;
+    color: rgba(255, 255, 255, 0.726);
+    cursor: pointer;
+}
+
+nav .navElements a:hover{
+    color: white;
+}
+
+nav img{
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+}
+
+/* home section */
+#home{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    margin-top: 5px;
+    border: 2px solid ;
+    height: 45rem;
+    text-align: center;
+    grid-template-areas:
+    'logoArea homeText';
+}
+
+#logoImg{
+    grid-area: logoArea;
+    justify-self: right;
+    align-self: center;
+    width: 22rem;
+    height: 22rem;
+    padding: 2rem;
+}
+
+#homeText{
+    grid-area: homeText;
+    text-align: left;
+    font-size: 1.3rem;
+    padding: 5rem;
+    align-content: center;
+    line-height: 2rem;
+    width: 40rem;
+}
+
+/* tr-102 section */
+#tr102{
+    border: 2px solid;
+    height: 45rem;
+    text-align: center;
+}
+.heading{
+    font-size: 5rem;
+    padding: 1rem;
+    letter-spacing: 10px;
+}
+
+.subheading{
+    font-size: 0.9rem;
+    color: rgb(177, 174, 174);
+}
