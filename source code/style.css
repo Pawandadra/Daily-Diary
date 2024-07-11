@@ -90,6 +90,9 @@ nav img{
 
 /* tr-102 section */
 #tr102{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid;
     height: 45rem;
     text-align: center;
@@ -103,4 +106,24 @@ nav img{
 .subheading{
     font-size: 0.9rem;
     color: rgb(177, 174, 174);
+}
+
+/* Calender Formatting */
+#calender{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    border: 1px solid red;
+}
+#days{
+    display: grid;
+    border: 1px solid ;
+    height: fit-content;
+    grid-template-columns: repeat(7, 5rem);
+}
+#dates{
+    display: grid;
+    border: 1px solid ;
+    grid-template-columns: repeat(7, 5rem);
+    height: fit-content;
 }
