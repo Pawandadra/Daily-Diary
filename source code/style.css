@@ -5,6 +5,7 @@
     padding: 0;
     font-family: "Karla", sans-serif;
     font-optical-sizing: auto;
+    user-select: none;
 }
 
 html {
@@ -14,6 +15,13 @@ html {
 body{
     background: #191919f5;
     /* height: 200vh; */
+}
+
+/* Universal Classes */
+.emptyDates{
+    padding: 1rem;
+    color: rgba(104, 103, 103, 0.849);
+    cursor: pointer;
 }
 
 header{
@@ -96,6 +104,24 @@ nav img{
     border: 2px solid;
     height: 45rem;
     text-align: center;
+    position: relative;
+}
+
+#trainingStart{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 1rem;
+    top: 5px;
+    left: 5px;
+    color: white;
+}
+
+#trainingEnd{
+    position: absolute;
+    font-size: 1.5rem;
+    padding: 1rem;
+    top: 5px;
+    right: 5px;
 }
 .heading{
     font-size: 5rem;
@@ -104,26 +130,56 @@ nav img{
 }
 
 .subheading{
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: rgb(177, 174, 174);
 }
 
 /* Calender Formatting */
 #calender{
     display: flex;
+    margin: 2rem;
+}
+
+#june,
+#july{
+    padding: 1rem;
+    margin: 2rem;
+    display: flex;
     flex-direction: column;
     width: fit-content;
-    border: 1px solid red;
+    background-color: #19191950;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+}
+#june h1,
+#july h1{
+    margin: 1rem;
 }
 #days{
     display: grid;
-    border: 1px solid ;
+    font-size: 1.5rem;
+    margin: 1rem;
+    /* border: 1px solid ; */
     height: fit-content;
     grid-template-columns: repeat(7, 5rem);
 }
+.day{
+    color: rgb(165, 163, 163);
+}
 #dates{
     display: grid;
-    border: 1px solid ;
+    /* border: 1px solid ; */
+    text-align: right;
     grid-template-columns: repeat(7, 5rem);
     height: fit-content;
+}
+
+.dateBox{
+    padding: 1rem;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.801);
+}
+.dateBox:hover{
+    text-decoration: underline;
+    color: white;
 }
