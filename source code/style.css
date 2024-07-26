@@ -1,3 +1,5 @@
+@import url(../Contact-Form/assets/contactMe.css);
+
 *{
     color: white;
     box-sizing: border-box;
@@ -14,15 +16,36 @@ html {
 
 body{
     background: #191919f5;
+    width: 100%;
+    padding: 1rem;
     /* height: 200vh; */
 }
 
-/* Universal Classes */
+/* Universal Classes below */
 .emptyDates{
     padding: 1rem;
     color: rgba(104, 103, 103, 0.849);
     cursor: pointer;
 }
+
+.heading{
+    font-size: 5rem;
+    padding: 1rem;
+    letter-spacing: 10px;
+}
+
+hr{
+    border:none;
+    height: 1px;
+    background-color: gray;
+}
+
+.subheading{
+    font-size: 1rem;
+    color: rgb(177, 174, 174);
+}
+
+/* Universal Classes above */
 
 header{
     position: sticky;
@@ -37,6 +60,7 @@ header{
     display: flex;
     z-index: 999;
 }
+
 nav{
     display: flex;
     list-style: none;
@@ -70,7 +94,7 @@ nav img{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     margin-top: 5px;
-    border: 2px solid ;
+    /* border: 2px solid ; */
     height: 45rem;
     text-align: center;
     grid-template-areas:
@@ -101,7 +125,7 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid;
+    /* border: 2px solid; */
     height: 45rem;
     text-align: center;
     position: relative;
@@ -123,16 +147,6 @@ nav img{
     top: 5px;
     right: 5px;
 }
-.heading{
-    font-size: 5rem;
-    padding: 1rem;
-    letter-spacing: 10px;
-}
-
-.subheading{
-    font-size: 1rem;
-    color: rgb(177, 174, 174);
-}
 
 /* Calender Formatting */
 #calender{
@@ -151,11 +165,13 @@ nav img{
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     border-radius: 20px;
 }
+
 #june h1,
 #july h1{
     margin: 1rem;
 }
-#days{
+
+.days{
     display: grid;
     font-size: 1.5rem;
     margin: 1rem;
@@ -166,7 +182,7 @@ nav img{
 .day{
     color: rgb(165, 163, 163);
 }
-#dates{
+.dates{
     display: grid;
     /* border: 1px solid ; */
     text-align: right;
@@ -179,7 +195,56 @@ nav img{
     text-decoration: none;
     color: rgba(255, 255, 255, 0.801);
 }
+
 .dateBox:hover{
     text-decoration: underline;
     color: white;
 }
+
+#about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid; */
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    padding-bottom: 3rem;
+}
+
+#aboutContainer{
+    font-size: 1.3rem;
+    width: 60vw;
+    text-align: justify;
+    line-height: 3rem;
+}
+
+#aboutContainer ul{
+    text-align: left;
+}
+
+#aboutContainer ul ul{
+    list-style: none;
+}
+
+#aboutContainer a{
+    text-decoration: none;
+    color: aqua;
+}
+
+#aboutContainer a:visited{
+    color: rgb(3, 121, 121);
+}
+
+#contactMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid; */
+    height: fit-content;
+    text-align: center;
+    /* position: relative; */
+    padding-bottom: 3rem;
+}
+
+@import url(../Contact-Form/assets/contactMe.css);
