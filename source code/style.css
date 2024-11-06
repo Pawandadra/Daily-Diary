@@ -1,4 +1,3 @@
-@import url(../Contact-Form/assets/contactMe.css);
 
 *{
     color: white;
@@ -31,7 +30,7 @@ body{
 .heading{
     font-size: 5rem;
     padding: 1rem;
-    letter-spacing: 10px;
+    /* letter-spacing: 5px; */
 }
 
 hr{
@@ -55,8 +54,7 @@ header{
     /* margin: 5px; */
     background: url(../assets/images/navbg.png)no-repeat center;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.870);
-    border-bottom-left-radius: 60px;
-    border-top-left-radius: 60px;
+    border-radius: 60px;
     display: flex;
     z-index: 999;
 }
@@ -67,7 +65,7 @@ nav{
     /* border: 2px solid red; */
     align-items: center;
     padding: 0.8rem;
-    width: 100%;
+    width: fit-content;
 }
 
 nav .navElements a{
@@ -95,7 +93,7 @@ nav img{
     grid-template-columns: 1fr 1.5fr;
     margin-top: 5px;
     /* border: 2px solid ; */
-    height: 45rem;
+    height: 40rem;
     text-align: center;
     grid-template-areas:
     'logoArea homeText';
@@ -134,7 +132,7 @@ nav img{
 #trainingStart{
     position: absolute;
     font-size: 1.5rem;
-    padding: 1rem;
+    padding: 1rem;  
     top: 5px;
     left: 5px;
     color: white;
@@ -151,13 +149,13 @@ nav img{
 /* Calender Formatting */
 #calender{
     display: flex;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 #june,
 #july{
     padding: 1rem;
-    margin: 2rem;
+    margin: 1.5rem;
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -240,11 +238,127 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid; */
     height: fit-content;
     text-align: center;
     /* position: relative; */
     padding-bottom: 3rem;
 }
 
-@import url(../Contact-Form/assets/contactMe.css);
+#contactBtnCont{
+    margin: 4rem;
+}
+.logodivs{
+    margin: 1rem;
+}
+@media only screen and (max-width: 1380px) {
+    
+    /* Universal Classes below */
+    .emptyDates{
+        padding: 0.6rem;
+        padding-top: 1.5rem;
+    }
+
+    .dateBox{
+        padding: 0.6rem;
+        padding-top: 1.5rem;
+    }
+
+    .heading{
+        font-size: 4.5rem;
+    }
+
+    .subheading{
+        font-size: 1rem;
+        color: rgb(177, 174, 174);
+    }
+
+    /* Universal Classes above */
+
+    header{
+        position: sticky;
+        top: 5px;
+        height: 6rem;
+        width: 100%;
+        /* margin: 5px; */
+        background: url(../assets/images/navbg.png)no-repeat center;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.870);
+        border-radius: 60px;
+        display: flex;
+        z-index: 999;
+    }
+
+    nav{
+        display: flex;
+        list-style: none;
+        /* border: 2px solid red; */
+        align-items: center;
+        padding: 0.8rem;
+        width: fit-content;
+    }
+
+    nav .navElements a{
+        padding: 5px;
+        font-size: 1.5rem;
+        text-decoration: none;
+        margin-left: 8rem;
+        color: rgba(255, 255, 255, 0.726);
+        cursor: pointer;
+    }
+
+    nav .navElements a:hover{
+        color: white;
+    }
+
+    nav img{
+        width: 4rem;
+        height: 4rem;
+        padding: 0;
+    }
+
+    /* home section */
+    #home{
+        height: 38rem;
+    }
+
+    /* tr-102 section */
+    #tr102{
+        height: 39rem;
+    }
+
+    #trainingStart{
+        font-size: 1.4rem;
+    }
+
+    #trainingEnd{
+        font-size: 1.4rem;
+    }
+
+    /* Calender Formatting */
+    #calender{
+        display: flex;
+        margin: 0.8rem;
+    }
+
+    #june,
+    #july{
+        padding: 0.8rem;
+        padding-bottom: 1.3rem;
+        margin: 1rem;
+    }
+
+    #june h1,
+    #july h1{
+        margin: 0.8rem;
+        font-size: 1.8rem;
+    }
+
+    .days{
+        font-size: 1.3rem;
+        margin: 0.7rem;
+    }
+
+    .dates{
+        grid-template-columns: repeat(7, 4.8rem);
+    }
+
+}
